@@ -17,7 +17,7 @@ app.use(bodyParser.json())
 app.use(cookieParser())
 app.use(express.json())
 app.use(cors({
-  origin: "http://localhost:5173"
+  origin: "https://portfolio-pearl-pi-40.vercel.app"
 }))
 app.use(
   fileUpload({
@@ -47,3 +47,4 @@ app.get("/*splat", (_, res) => {
 
 
 app.listen(port, () => {console.log(`http://localhost:${port}`)})
+
